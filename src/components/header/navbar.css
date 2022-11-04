@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: var(--fw-800);
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+.header-text {
+  font-size: var(--fs-btn);
+  letter-spacing: 0.2em;
+  padding-left: 0.5em;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+}
