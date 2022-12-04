@@ -1,0 +1,22 @@
+// STUB: function returns weight
+@function weight($weight-name) {
+  @return map-get($font-weights , $weight-name)
+}
+
+// STUB: function returns font size
+@function size($size-name) {
+  @return map-get($font-sizes, $size-name)
+}
+
+// STUB: function returns border radius
+@function radius($radius-name) {
+  @return map-get($border-radii, $radius-name)
+}
+
+// STUB: create transition mixin
+@mixin transition-ease {
+  transition: all 0.2s ease-in-out;
+}
+
+// TODO: add media query for responsiveness after we are done with all mobile screen features
+// check https: //www.youtube.com/watch?v=_a5j7KoflTs&list=PLxBSSAEDXQzbKW6BUstg_qQ-SoFH8vOw_&index=29

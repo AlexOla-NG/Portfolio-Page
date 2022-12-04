@@ -1,0 +1,99 @@
+@import 'resets', 'variables', 'config';
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  color: $text-color;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-color;
+  font-family: "Righteous", cursive;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+
+p {
+  line-height: 1.6;
+}
+
+// TODO: stopped here
+// apply styles on .btn
+
+.btn {
+  background-color: $accent-color;
+  border: none;
+  border-radius: radius(regular);
+  box-shadow: 0 10px 0 darken($accent-color, 20%);
+  color: $text-color;
+  cursor: pointer;
+  font-size: size(fs-btn);
+  font-weight: weight(medium);
+  padding: 1.05rem 2.8rem;
+  text-transform: uppercase;
+  position: relative;
+  // transition: background-color 0.3s ease;
+  @include transition-ease
+}
+
+.btn:hover {
+  background-color: var(--white);
+  box-shadow: 0 10px 0 var(--dusty-gray);
+}
+
+.btn:active {
+  box-shadow: 0 5px 0 var(--dark-yellow);
+  transform: translateY(5px);
+}
+
+.tag {
+  font-size: var(--fs-body2);
+}
+
+/* set styles for reusable component */
+.reusable-header {
+  padding: 0 1rem 3rem;
+  text-align: center;
+}
+
+.reusable-header h2 {
+  font-size: var(--fs-h2);
+  padding-bottom: 1.5rem;
+}
+
+.reusable-header span {
+  font-size: var(--fs-body1);
+}
+
+.reusable-header p {
+  color: var(--davy-gray);
+  font-size: var(--fs-body1);
+  max-width: 50rem;
+  padding-top: 1.5rem;
+}
