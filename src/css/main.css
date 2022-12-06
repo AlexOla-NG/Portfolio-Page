@@ -8,6 +8,174 @@
   padding: 0;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 800;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: hsl(0deg, 0%, 98%);
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+}
+.header-text {
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  padding-left: 0.5em;
+}
+.header .avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.menu-btn__burger {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  background: hsl(0deg, 0%, 20%);
+  transition: all 0.3s ease-in-out;
+}
+.menu-btn__burger::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background: hsl(0deg, 0%, 20%);
+  transition: all 0.3s ease-in-out;
+}
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background: hsl(0deg, 0%, 20%);
+  transition: all 0.3s ease-in-out;
+}
+.menu-btn__burger.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.menu-btn__burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+}
+.nav.open {
+  visibility: visible;
+}
+.nav .menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: hsl(0deg, 0%, 7%);
+  list-style-type: none;
+  padding-right: 1rem;
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.nav .menu-nav.open {
+  transform: translateY(0);
+}
+.nav .menu-nav__item {
+  transform: translateX(100vw);
+  transition: all 0.3s ease-in-out;
+}
+.nav .menu-nav__item.open {
+  transform: translateX(0);
+}
+.nav .menu-nav__item.active > a {
+  color: hsl(52deg, 95%, 50%);
+}
+.nav .menu-nav__link {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: 800;
+  transition: all 0.3s ease-in-out;
+}
+.nav .menu-nav__link:hover {
+  background-color: #ababab;
+  color: #fff;
+}
+.nav .menu-nav__link:active {
+  color: hsl(52deg, 95%, 50%);
+}
+
+.menu-nav__item:nth-child(1) {
+  transition-delay: 0.25s;
+}
+
+.menu-nav__item:nth-child(2) {
+  transition-delay: 0.35s;
+}
+
+.menu-nav__item:nth-child(3) {
+  transition-delay: 0.45s;
+}
+
+.menu-nav__item:nth-child(4) {
+  transition-delay: 0.55s;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    padding: 0 2rem;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+    transform: translateX(0);
+  }
+  .nav .menu-nav__link {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
 :root {
   scroll-behavior: smooth;
 }
@@ -63,21 +231,21 @@ p {
   padding: 1.05rem 2.8rem;
   text-transform: uppercase;
   position: relative;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-  background-color: var(--white);
-  box-shadow: 0 10px 0 var(--dusty-gray);
+  background-color: #c7ad05;
+  box-shadow: 0 10px 0 #635703;
 }
 
 .btn:active {
-  box-shadow: 0 5px 0 var(--dark-yellow);
+  box-shadow: 0 5px 0 #958204;
   transform: translateY(5px);
 }
 
 .tag {
-  font-size: var(--fs-body2);
+  font-size: 0.9rem;
 }
 
 /* set styles for reusable component */
@@ -87,17 +255,17 @@ p {
 }
 
 .reusable-header h2 {
-  font-size: var(--fs-h2);
+  font-size: 2.2rem;
   padding-bottom: 1.5rem;
 }
 
 .reusable-header span {
-  font-size: var(--fs-body1);
+  font-size: 1rem;
 }
 
 .reusable-header p {
-  color: var(--davy-gray);
-  font-size: var(--fs-body1);
+  color: #525252;
+  font-size: 1rem;
   max-width: 50rem;
   padding-top: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

@@ -6,6 +6,9 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
+// TODO: stopped here
+// style HomeHero
+
 const App = () => {
   return (
     <div>

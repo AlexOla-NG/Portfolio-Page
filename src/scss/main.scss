@@ -1,4 +1,4 @@
-@import 'resets', 'variables', 'config';
+@import 'resets', 'variables', 'config', 'navbar', 'navlinks', 'responsiveness';
 
 :root {
   scroll-behavior: smooth;
@@ -63,17 +63,17 @@ p {
 }
 
 .btn:hover {
-  background-color: var(--white);
-  box-shadow: 0 10px 0 var(--dusty-gray);
+  background-color: darken($accent-color, 10%);
+  box-shadow: 0 10px 0 darken($accent-color, 30%);
 }
 
 .btn:active {
-  box-shadow: 0 5px 0 var(--dark-yellow);
+  box-shadow: 0 5px 0 darken($accent-color, 20%);
   transform: translateY(5px);
 }
 
 .tag {
-  font-size: var(--fs-body2);
+  font-size: size(fs-btn);
 }
 
 /* set styles for reusable component */
@@ -83,17 +83,17 @@ p {
 }
 
 .reusable-header h2 {
-  font-size: var(--fs-h2);
+  font-size: size(fs-h2);
   padding-bottom: 1.5rem;
 }
 
 .reusable-header span {
-  font-size: var(--fs-body1);
+  font-size: size(fs-body1);
 }
 
 .reusable-header p {
-  color: var(--davy-gray);
-  font-size: var(--fs-body1);
+  color: lighten($primary-color, 25%);
+  font-size: size(fs-body1);
   max-width: 50rem;
   padding-top: 1.5rem;
 }

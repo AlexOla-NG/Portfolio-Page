@@ -13,9 +13,46 @@
   @return map-get($border-radii, $radius-name)
 }
 
+// STUB: function toggles color based on lightness
+@function set-text-color($color) {
+  @if (lightness($color) > 40%) {
+    @return #000;
+  }
+
+  @else {
+    @return #fff;
+  }
+}
+
 // STUB: create transition mixin
 @mixin transition-ease {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+// STUB: create flex mixin
+@mixin flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
 }
 
 // TODO: add media query for responsiveness after we are done with all mobile screen features

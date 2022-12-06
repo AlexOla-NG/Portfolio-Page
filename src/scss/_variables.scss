@@ -2,6 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
+// STUB: colors
+$primary-color: hsl(0, 0%, 7%);
+$secondary-color: hsl(0, 0%, 98%);
+$text-color: hsl(0, 0%, 20%);
+$accent-color: hsl(52, 95%, 50%);
+
+// STUB: border radius
+$border-radii: (
+  'regular': 0.7rem,
+  'medium': 1rem,
+  'circle': 50%
+);
+
 // STUB: font size
 $font-sizes: (
   'fs-h1': 3rem,
@@ -21,17 +34,4 @@ $font-weights: (
   'regular': 400,
   'medium': 700,
   'bold': 800,
-);
-
-// STUB: colors
-$primary-color: hsl(0, 0%, 7%);
-$secondary-color: hsl(0, 0%, 98%);
-$text-color: hsl(0, 0%, 20%);
-$accent-color: hsl(52, 95%, 50%);
-
-// STUB: border radius
-$border-radii: (
-  'regular': 0.7rem,
-  'medium': 1rem,
-  'circle': 50%
 );

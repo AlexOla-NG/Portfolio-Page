@@ -1,0 +1,21 @@
+.header {
+  @include flex-center-between;
+  font-weight: weight(bold);
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: $secondary-color;
+  box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
+
+  &-text {
+    font-size: size(fs-btn);
+    letter-spacing: 0.2em;
+    padding-left: 0.5em;
+  }
+
+  .avatar-container {
+    @include flex-center-between
+  }
+}

@@ -1,69 +1,63 @@
-import React from "react";
-import "./navlinks.css";
+import React, { useState } from "react";
+// import "./navlinks.css";
 
 const NavLinks = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   // STUB: pop out drawer onclick
-  const toggleHamburger = () => {
-    document.body.classList.toggle("nav-open");
+  const toggleMenu = () => {
+    if (!showMenu) {
+      document.querySelector(".menu-btn__burger").classList.add("open");
+      document.querySelector(".nav").classList.add("open");
+      document.querySelector(".menu-nav").classList.add("open");
+      document
+        .querySelectorAll(".menu-nav__item")
+        .forEach((item) => item.classList.add("open"));
+
+      setShowMenu(true);
+    } else {
+      document.querySelector(".menu-btn__burger").classList.remove("open");
+      document.querySelector(".nav").classList.remove("open");
+      document.querySelector(".menu-nav").classList.remove("open");
+      document
+        .querySelectorAll(".menu-nav__item")
+        .forEach((item) => item.classList.remove("open"));
+
+      setShowMenu(false);
+    }
   };
 
   return (
-    <div>
-      {/* desktop screen */}
-      <div className="navlinks-list-desktop">
-        <ul className="navlinks-list ">
-          <li>
-            <a href="./" className="nav__link">
-              home
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="nav__link">
-              about
-            </a>
-          </li>
-          <li>
-            <a href="#projects" className="nav__link">
-              projects
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="nav__link">
-              contact
-            </a>
-          </li>
-        </ul>
+    <>
+      <div className="menu-btn" onClick={toggleMenu}>
+        <span className="menu-btn__burger"></span>
       </div>
 
-      {/* mobile screen */}
-      <div className="nav">
-        <button className="nav__toggle" onClick={toggleHamburger}>
-          <span className="hamburger"></span>
-        </button>
-        <ul className="navlinks-list nav__list">
-          <li className="nav__item">
-            <a href="./" className="nav__link">
-              home
+      <nav className="nav">
+        <ul className="menu-nav">
+          <li className="menu-nav__item">
+            <a href="./" className="menu-nav__link">
+              Home
             </a>
           </li>
-          <li className="nav__item">
-            <a href="#about" className="nav__link">
-              about
+          <li className="menu-nav__item">
+            <a href="#about" className="menu-nav__link">
+              About Me
             </a>
           </li>
-          <li className="nav__item">
-            <a href="#projects" className="nav__link">
-              projects
+          <li className="menu-nav__item">
+            <a href="#projects" className="menu-nav__link">
+              My Projects
             </a>
           </li>
-          <li className="nav__item">
-            <a href="#contact" className="nav__link">
-              contact
+          <li className="menu-nav__item">
+            <a href="#contact" className="menu-nav__link">
+              Contact Me
             </a>
           </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </>
   );
 };
 

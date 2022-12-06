@@ -1,0 +1,31 @@
+@include media-md {
+  .menu-btn {
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: visible;
+
+    .menu-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      padding: 0 2rem;
+
+      &__item {
+        display: inline;
+        padding-right: 1.5rem;
+        transform: translateX(0);
+      }
+
+      &__link {
+        font-size: size(fs-btn);
+        padding: 1rem;
+      }
+    }
+  }
+
+}

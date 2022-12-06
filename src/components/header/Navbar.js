@@ -1,5 +1,4 @@
 import React from "react";
-import "./navbar.css";
 import Avatar from "./Avatar";
 import NavLinks from "./NavLinks";
 
