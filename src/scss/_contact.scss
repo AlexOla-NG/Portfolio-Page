@@ -1,0 +1,103 @@
+.contact-section-wrapper {
+  background: linear-gradient(to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)),
+    url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+  background-position: center;
+  @include flex-center-between;
+  flex-direction: column;
+  justify-content: center;
+
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1rem;
+      width: 100%;
+      max-width: 80rem;
+
+      .col-xs-12 {
+        grid-column: 1/-1;
+      }
+
+      .col-md-6 {
+        grid-column: 1/-1;
+      }
+
+      /* ///// inputs /////*/
+      input:focus~label,
+      textarea:focus~label,
+      input:valid~label,
+      textarea:valid~label {
+        font-size: size(fs-caption);
+        color: $accent-color;
+        margin-bottom: 1rem;
+        top: -5px;
+        @include transition-ease-fast;
+      }
+
+      .styled-input {
+        float: left;
+        width: 100%;
+        margin: 1rem 0;
+        position: relative;
+        border-radius: radius(regular);
+
+        label {
+          color: $accent-color;
+          font-size: size(fs-body1);
+          padding: 1.3rem 30px 1rem;
+          position: absolute;
+          top: 10px;
+          left: 0;
+          @include transition-ease-fast;
+          pointer-events: none;
+        }
+
+        .wide {
+          max-width: 100%;
+        }
+      }
+
+      input,
+      textarea {
+        padding: 30px;
+        border: 0;
+        max-width: 100%;
+        width: 100%;
+        font-size: size(fs-body1);
+        background-color: lighten($primary-color, 10%);
+        color: $secondary-color;
+        border-radius: radius(regular);
+
+        &:focus {
+          outline: 0;
+
+          &~span {
+            width: 100%;
+            @include transition-ease-fast
+          }
+        }
+      }
+
+      input {
+        width: 100%;
+      }
+
+      textarea {
+        max-width: 100%;
+        min-height: 15em;
+        width: 100%;
+      }
+
+      .form-btn {
+        padding: 1rem 1.2rem;
+        width: 100%;
+      }
+    }
+  }
+}

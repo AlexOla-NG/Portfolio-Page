@@ -1,5 +1,4 @@
 import React from "react";
-import "./about.css";
 import ReusableHeader from "../ReusableHeader";
 import MoreInfo from "./MoreInfo";
 import MySkills from "./MySkills";

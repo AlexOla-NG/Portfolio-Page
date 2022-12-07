@@ -7,7 +7,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
 // TODO: stopped here
-// style HomeHero
+// style Footer
 
 const App = () => {
   return (

@@ -29,13 +29,16 @@
   transition: all 0.3s ease-in-out;
 }
 
+@mixin transition-ease-fast {
+  transition: all 0.225s ease-in-out;
+}
+
 // STUB: create flex mixin
 @mixin flex-center-between {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 
 @mixin media-md {
   @media screen and (min-width: 768px) {

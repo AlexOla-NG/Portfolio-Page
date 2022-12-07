@@ -96,6 +96,7 @@
     }
 
     &__link {
+      color: darken($secondary-color, 10%);
       display: inline-block;
       font-size: 2rem;
       text-transform: uppercase;
@@ -104,8 +105,8 @@
       @include transition-ease;
 
       &:hover {
-        background-color: lighten($primary-color, 60%);
-        color: set-text-color($primary-color);
+        background-color: lighten($primary-color, 13%);
+        color: darken($secondary-color, 10%);
       }
 
       &:active {

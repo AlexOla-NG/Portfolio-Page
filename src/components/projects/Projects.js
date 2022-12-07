@@ -1,8 +1,5 @@
 import React from "react";
 
-import "../about/about.css";
-import "./projects.css";
-
 import ReusableHeader from "../ReusableHeader";
 import SingleProject from "./SingleProject";
 

@@ -19,7 +19,7 @@ Inspo from Ram Maheshwari (https://www.rammaheshwari.com/)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Al X](https://alexander-oweka.netlify.app)
 
 ## My process
 
@@ -27,6 +27,7 @@ Inspo from Ram Maheshwari (https://www.rammaheshwari.com/)
 
 - Semantic HTML5 markup
 - CSS custom properties
+- SCSS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
@@ -51,10 +52,11 @@ I had some challenge with the animation & transition effects. I originally inten
 - [:valid](https://developer.mozilla.org/en-US/docs/Web/CSS/:valid) - This is the documentation for the valid pseudo-class. It is used to apply styles to form element that validate successfully . I really liked this pattern and will use it going forward.
 - [General sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator) - This is the documentation for the general sibling combinator. It is used to match all iterations of the second element . I really liked this pattern and will use it going forward.
 - [Link not clickable because ::Before and ::After [duplicate]](https://stackoverflow.com/a/49487195) - This helped me make anchor elements nested in pseudo-elements clickable. I really liked this pattern and will use it going forward.
+- [Sass Tutorial for Beginners - CSS With Superpowers](https://youtu.be/_a5j7KoflTs) - This tutorial introduced me to SCSS. I really liked the way the instructor broke down the concepts.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Al X](https://alexander-oweka.netlify.app)
 - LinkedIn - [Alexander Oweka](https://www.linkedin.com/in/alexander-oweka-6bb086166/)
 - Twitter - [@OwekaAlexander](https://twitter.com/OwekaAlexander)
 

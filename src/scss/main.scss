@@ -1,4 +1,4 @@
-@import 'resets', 'variables', 'config', 'navbar', 'navlinks', 'responsiveness';
+@import 'resets', 'variables', 'config', 'navbar', 'navlinks', 'homeHero', 'about', 'projects', 'contact', 'responsiveness';
 
 :root {
   scroll-behavior: smooth;
@@ -43,14 +43,11 @@ p {
   line-height: 1.6;
 }
 
-// TODO: stopped here
-// apply styles on .btn
-
 .btn {
-  background-color: $accent-color;
+  background-color: darken($accent-color, 10%);
+  box-shadow: 0 10px 0 darken($accent-color, 30%);
   border: none;
   border-radius: radius(regular);
-  box-shadow: 0 10px 0 darken($accent-color, 20%);
   color: $text-color;
   cursor: pointer;
   font-size: size(fs-btn);
@@ -58,13 +55,12 @@ p {
   padding: 1.05rem 2.8rem;
   text-transform: uppercase;
   position: relative;
-  // transition: background-color 0.3s ease;
   @include transition-ease
 }
 
 .btn:hover {
-  background-color: darken($accent-color, 10%);
-  box-shadow: 0 10px 0 darken($accent-color, 30%);
+  background-color: $accent-color;
+  box-shadow: 0 10px 0 darken($accent-color, 20%);
 }
 
 .btn:active {
@@ -73,7 +69,12 @@ p {
 }
 
 .tag {
+  color: darken($secondary-color, 10%);
   font-size: size(fs-btn);
+  background-color: lighten($primary-color, 13%);
+  border-radius: radius(regular);
+  margin: auto 0.9rem 0.9rem 0;
+  padding: 0.8rem 1rem;
 }
 
 /* set styles for reusable component */

@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./contact.css";
 import ReusableHeader from "../ReusableHeader";
 import ContactForm from "./ContactForm";
 
