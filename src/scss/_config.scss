@@ -40,6 +40,7 @@
   justify-content: space-between;
 }
 
+// STUB: create media-query mixin
 @mixin media-md {
   @media screen and (min-width: 768px) {
     @content;
@@ -51,12 +52,3 @@
     @content;
   }
 }
-
-@mixin media-xl {
-  @media screen and (min-width: 1600px) {
-    @content;
-  }
-}
-
-// TODO: add media query for responsiveness after we are done with all mobile screen features
-// check https: //www.youtube.com/watch?v=_a5j7KoflTs&list=PLxBSSAEDXQzbKW6BUstg_qQ-SoFH8vOw_&index=29

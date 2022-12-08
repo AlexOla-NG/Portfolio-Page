@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./footer.css";
 import SocialMediaList from "./SocialMediaList";
 
 const Footer = () => {

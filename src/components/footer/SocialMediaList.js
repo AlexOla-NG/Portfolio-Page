@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./footer.css";
 import { ReactComponent as Linkedin } from "../../assests/icons/linkedin.svg";
 import { ReactComponent as Github } from "../../assests/icons/github.svg";
 import { ReactComponent as Twitter } from "../../assests/icons/twitter.svg";

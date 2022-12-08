@@ -35,22 +35,22 @@ const NavLinks = () => {
 
       <nav className="nav">
         <ul className="menu-nav">
-          <li className="menu-nav__item">
+          <li className="menu-nav__item" onClick={toggleMenu}>
             <a href="./" className="menu-nav__link">
               Home
             </a>
           </li>
-          <li className="menu-nav__item">
+          <li className="menu-nav__item" onClick={toggleMenu}>
             <a href="#about" className="menu-nav__link">
               About Me
             </a>
           </li>
-          <li className="menu-nav__item">
+          <li className="menu-nav__item" onClick={toggleMenu}>
             <a href="#projects" className="menu-nav__link">
               My Projects
             </a>
           </li>
-          <li className="menu-nav__item">
+          <li className="menu-nav__item" onClick={toggleMenu}>
             <a href="#contact" className="menu-nav__link">
               Contact Me
             </a>

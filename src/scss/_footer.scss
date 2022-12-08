@@ -1,0 +1,79 @@
+.footer-section-wrapper {
+  background-color: $primary-color;
+  color: $secondary-color;
+  text-align: center;
+
+  .article {
+    h1 {
+      color: $secondary-color;
+      font-size: size(fs-h5);
+      padding-bottom: 1rem;
+    }
+
+    p {
+      font-size: size(fs-caption);
+      line-height: 1.6;
+    }
+  }
+
+  /* Social Media Icons */
+  .social-media-list {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    max-width: 26rem;
+    padding: 1rem 0 0;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+
+    li {
+      display: grid;
+      place-items: center;
+      position: relative;
+      height: 60px;
+      width: 60px;
+      margin: 10px 3px;
+      line-height: 60px;
+      border-radius: radius(circle);
+      color: $secondary-color;
+      background-color: darken($primary-color, 4%);
+      cursor: pointer;
+      @include transition-ease-fast;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: radius(circle);
+        opacity: 0;
+        box-shadow: 0 0 0 1px $secondary-color;
+        pointer-events: none;
+        @include transition-ease-fast;
+      }
+
+      &:hover:after {
+        opacity: 1;
+        transform: scale(1.12);
+        transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+      }
+
+      & a {
+        color: $secondary-color;
+        z-index: 10;
+      }
+
+      &:hover a {
+        color: $primary-color;
+      }
+    }
+  }
+}
