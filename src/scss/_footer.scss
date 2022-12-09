@@ -37,7 +37,7 @@
       line-height: 60px;
       border-radius: radius(circle);
       color: $secondary-color;
-      background-color: lighten($primary-color, 15%);
+      background-color: lighten($primary-color, 10%);
       cursor: pointer;
       @include transition-ease-fast;
 
