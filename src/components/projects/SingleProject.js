@@ -15,16 +15,6 @@ const SingleProject = (props) => {
       <div>
         <h3>{props.title}</h3>
         <p>{props.description}</p>
-        <p>
-          This project is a coding challenge from{" "}
-          <a
-            href="https://frontendmentor.io"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {props.source}
-          </a>
-        </p>
         <div className="skills-wrapper">{getSkills()}</div>
         <div className="btn-wrapper">
           <button className="btn">

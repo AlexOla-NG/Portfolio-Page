@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HomeHero = () => {
   return (
@@ -11,7 +12,7 @@ const HomeHero = () => {
         </p>
       </div>
       <button className="btn">
-        <a href="#projects">projects</a>
+        <Link to="projects">projects</Link>
       </button>
     </section>
   );

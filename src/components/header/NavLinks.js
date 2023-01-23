@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "./navlinks.css";
+import { Link } from "react-router-dom";
 
 const NavLinks = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -36,24 +36,24 @@ const NavLinks = () => {
       <nav className="nav">
         <ul className="menu-nav">
           <li className="menu-nav__item" onClick={toggleMenu}>
-            <a href="./" className="menu-nav__link">
+            <Link to="/" className="menu-nav__link">
               Home
-            </a>
+            </Link>
           </li>
           <li className="menu-nav__item" onClick={toggleMenu}>
-            <a href="#about" className="menu-nav__link">
+            <Link to="about" className="menu-nav__link">
               About Me
-            </a>
+            </Link>
           </li>
           <li className="menu-nav__item" onClick={toggleMenu}>
-            <a href="#projects" className="menu-nav__link">
+            <Link to="projects" className="menu-nav__link">
               My Projects
-            </a>
+            </Link>
           </li>
           <li className="menu-nav__item" onClick={toggleMenu}>
-            <a href="#contact" className="menu-nav__link">
+            <Link to="contact" className="menu-nav__link">
               Contact Me
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

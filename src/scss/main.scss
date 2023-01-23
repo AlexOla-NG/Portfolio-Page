@@ -1,4 +1,4 @@
-@import 'resets', 'variables', 'config', 'navbar', 'navlinks', 'homeHero', 'about', 'projects', 'contact', 'footer', 'responsiveness';
+@import 'resets', 'variables', 'config', 'navbar', 'navlinks', 'homeHero', 'about', 'projects', 'contact', 'error', 'footer', 'responsiveness';
 
 :root {
   scroll-behavior: smooth;
@@ -79,7 +79,7 @@ p {
 
 /* set styles for reusable component */
 .reusable-header {
-  padding: 0 1rem 3rem;
+  padding: 3rem 1rem;
   text-align: center;
 }
 

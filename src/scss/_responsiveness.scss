@@ -74,4 +74,12 @@
   header {
     padding: 1rem 6rem !important;
   }
+
+  .projects-section-wrapper {
+    .single-project-wrapper {
+      &>div {
+        min-width: 37.75rem;
+      }
+    }
+  }
 }
