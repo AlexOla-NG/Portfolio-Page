@@ -6,6 +6,8 @@ import shortlyScreenshot from "../assests/shortlyDesktopPreview.jpg";
 import randomAdviceScreenshot from "../assests/adviceGenDesktopPreview.jpg";
 import lendsqrLoginScreenshot from "../assests/lendsqrLoginScreenshot.png";
 import scandiwebScreenshot from "../assests/scandiwebScreenshot.png";
+import paylodeScreenshot from "../assests/paylodeAssessmentScreenshot.png";
+import dmsScreenshot from "../assests/dataManagementSolutionLoginScreenshot.png";
 
 const Projects = () => {
   const projectHeaderProps = {
@@ -16,9 +18,27 @@ const Projects = () => {
 
   const projectContentProps = [
     {
+      title: "Movie App",
+      description:
+        "A movie clone app that queries themoviedb API. Built with React TS & SCSS",
+      img: paylodeScreenshot,
+      liveDemo: "https://paylode-products.vercel.app/",
+      githubRepo: "https://github.com/AlexOla-NG/paylode-products",
+      skills: ["React TS", "SCSS", "API"],
+    },
+    {
+      title: "Data Management Solution Dashboard",
+      description:
+        "Frontend UI for a data management solution platform. Built with React JS & Material UI",
+      img: dmsScreenshot,
+      liveDemo: "https://data-management-solution.vercel.app/login",
+      githubRepo: "https://github.com/AlexOla-NG/Data-Management-Solution",
+      skills: ["React JS", "Material UI"],
+    },
+    {
       title: "Lendsqr Dashboard",
       description:
-        "A react app comprising login, dashboard & user details pages.",
+        "A react app with login, dashboard & user details pages. Built with React TS & SCSS",
       img: lendsqrLoginScreenshot,
       liveDemo: "https://alexander-oweka-lendsqr-fe-test.vercel.app/login",
       githubRepo: "https://github.com/AlexOla-NG/lendsqr-fe-test",

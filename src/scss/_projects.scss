@@ -10,7 +10,7 @@
 
     .single-project-wrapper {
       display: grid;
-      place-items: center;
+      // place-items: center;
       gap: 2.5rem;
       grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 
@@ -33,16 +33,16 @@
       .skills-wrapper {
         display: flex;
         flex-wrap: wrap;
-        padding: 1.5rem 0;
+        padding: 1rem 0;
       }
 
       .btn-wrapper {
         display: flex;
-        gap: 1em;
+        gap: 1rem;
 
         .btn {
           font-size: 0.8rem;
-          padding: 1rem 1.2rem;
+          padding: 0.8rem 1.2rem;
           white-space: nowrap;
         }
       }

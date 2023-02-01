@@ -225,7 +225,6 @@
 }
 .projects-section-wrapper > div .single-project-wrapper {
   display: grid;
-  place-items: center;
   gap: 2.5rem;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 }
@@ -245,15 +244,15 @@
 .projects-section-wrapper > div .single-project-wrapper .skills-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 .projects-section-wrapper > div .single-project-wrapper .btn-wrapper {
   display: flex;
-  gap: 1em;
+  gap: 1rem;
 }
 .projects-section-wrapper > div .single-project-wrapper .btn-wrapper .btn {
   font-size: 0.8rem;
-  padding: 1rem 1.2rem;
+  padding: 0.8rem 1.2rem;
   white-space: nowrap;
 }
 .projects-section-wrapper > div .single-project-wrapper > img {
@@ -465,7 +464,6 @@
   }
   .single-project-wrapper .btn-wrapper .btn {
     font-size: 1rem;
-    margin-right: 2rem;
   }
   .contact-section-wrapper form > .container .col-md-6 {
     grid-column: span 6;
@@ -486,7 +484,12 @@
     padding: 1rem 6rem !important;
   }
   .projects-section-wrapper .single-project-wrapper > div {
-    min-width: 37.75rem;
+    max-width: 30.75rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .projects-section-wrapper .single-project-wrapper > div {
+    max-width: 100%;
   }
 }
 :root {

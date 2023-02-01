@@ -11,7 +11,6 @@ const SingleProject = (props) => {
 
   return (
     <article className="single-project-wrapper">
-      <img src={props.img} alt={props.title} />
       <div>
         <h3>{props.title}</h3>
         <p>{props.description}</p>
@@ -29,6 +28,7 @@ const SingleProject = (props) => {
           </button>
         </div>
       </div>
+      <img src={props.img} alt={props.title} loading="lazy" />
     </article>
   );
 };

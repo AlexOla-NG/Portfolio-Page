@@ -42,7 +42,7 @@
 
       .btn {
         font-size: 1rem;
-        margin-right: 2rem;
+        // margin-right: 2rem;
       }
     }
   }
@@ -78,7 +78,18 @@
   .projects-section-wrapper {
     .single-project-wrapper {
       &>div {
-        min-width: 37.75rem;
+        max-width: 30.75rem;
+      }
+    }
+  }
+}
+
+@include media-xxl {
+
+  .projects-section-wrapper {
+    .single-project-wrapper {
+      &>div {
+        max-width: 100%;
       }
     }
   }
