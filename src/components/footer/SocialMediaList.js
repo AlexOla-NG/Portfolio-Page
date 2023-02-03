@@ -7,7 +7,7 @@ import { ReactComponent as Medium } from "../../assests/icons/medium.svg";
 
 const SocialMediaList = () => {
   const svgIconsStyle = {
-    transform: "translateY(10%)",
+    transform: "translateY(20%)",
   };
   return (
     <ul className="social-media-list">

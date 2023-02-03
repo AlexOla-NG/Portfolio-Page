@@ -10,18 +10,17 @@
 
     .single-project-wrapper {
       display: grid;
-      // place-items: center;
       gap: 2.5rem;
       grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 
       h3 {
-        font-size: size(fs-h3);
+        @include resize(fs-h3);
         padding: 0 0 1.5rem;
       }
 
       p {
         color: lighten($primary-color, 30%);
-        font-size: size(fs-body1);
+        @include resize(fs-body1);
 
         &>a {
           color: $accent-color;
@@ -38,16 +37,15 @@
 
       .btn-wrapper {
         display: flex;
-        gap: 1rem;
 
         .btn {
-          font-size: 0.8rem;
+          @include resize(fs-projbtn);
           padding: 0.8rem 1.2rem;
           white-space: nowrap;
         }
       }
 
-      &>img {
+      img {
         width: 100%;
         height: auto;
       }

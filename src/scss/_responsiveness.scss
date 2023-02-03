@@ -29,20 +29,9 @@
 
         &__link {
           color: $text-color;
-          font-size: size(fs-btn);
+          @include resize(fs-body1);
           padding: 1rem;
         }
-      }
-    }
-  }
-
-  .single-project-wrapper {
-    .btn-wrapper {
-      display: block;
-
-      .btn {
-        font-size: 1rem;
-        // margin-right: 2rem;
       }
     }
   }
@@ -77,20 +66,27 @@
 
   .projects-section-wrapper {
     .single-project-wrapper {
-      &>div {
+      &>div:first-of-type {
         max-width: 30.75rem;
       }
     }
   }
+
+  .overlay-wrapper:hover .title-overlay {
+    padding: 2rem 0;
+  }
 }
 
 @include media-xxl {
-
   .projects-section-wrapper {
     .single-project-wrapper {
-      &>div {
-        max-width: 100%;
+      &>div:first-of-type {
+        max-width: 60rem;
       }
     }
+  }
+
+  .overlay-wrapper:hover .title-overlay {
+    padding: 6rem 0;
   }
 }

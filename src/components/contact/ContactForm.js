@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 const ContactForm = () => {
   const form = useRef();
 
+  // STUB: send form details to gmail; reset form
   const sendEmail = (e) => {
     e.preventDefault();
 

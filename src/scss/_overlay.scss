@@ -1,0 +1,31 @@
+.overlay-wrapper {
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: hsla(52, 95%, 30%, 0.82);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    @include transition-ease;
+  }
+
+  .title-overlay {
+    height: auto;
+    top: auto;
+    opacity: 0;
+
+    .text {
+      margin: 0 auto;
+    }
+  }
+}
+
+.overlay-wrapper:hover .title-overlay {
+  opacity: 1;
+  padding: 1.5rem 0;
+}

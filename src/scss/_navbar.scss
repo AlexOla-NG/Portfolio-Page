@@ -10,7 +10,7 @@
   box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
 
   &-text {
-    font-size: size(fs-btn);
+    @include resize(fs-btn);
     letter-spacing: 0.2em;
     padding-left: 0.5em;
   }

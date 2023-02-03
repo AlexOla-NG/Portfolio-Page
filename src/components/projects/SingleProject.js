@@ -15,20 +15,22 @@ const SingleProject = (props) => {
         <h3>{props.title}</h3>
         <p>{props.description}</p>
         <div className="skills-wrapper">{getSkills()}</div>
-        <div className="btn-wrapper">
-          <button className="btn">
+      </div>
+      <div className="overlay-wrapper">
+        <img src={props.img} alt={props.title} loading="lazy" />
+        <div className="btn-wrapper overlay title-overlay">
+          <button className="btn text">
             <a href={props.liveDemo} target="_blank" rel="noreferrer">
               Live Demo
             </a>
           </button>
-          <button className="btn">
+          <button className="btn text">
             <a href={props.githubRepo} target="_blank" rel="noreferrer">
               Github Repo
             </a>
           </button>
         </div>
       </div>
-      <img src={props.img} alt={props.title} loading="lazy" />
     </article>
   );
 };

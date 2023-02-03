@@ -1,17 +1,13 @@
 // STUB: function returns weight
 @function weight($weight-name) {
-  @return map-get($font-weights , $weight-name)
-}
-
-// STUB: function returns font size
-@function size($size-name) {
-  @return map-get($font-sizes, $size-name)
+  @return map-get($font-weights , $weight-name);
 }
 
 // STUB: function returns border radius
 @function radius($radius-name) {
-  @return map-get($border-radii, $radius-name)
+  @return map-get($border-radii, $radius-name);
 }
+
 
 // STUB: function toggles color based on lightness
 @function set-text-color($color) {
@@ -21,6 +17,17 @@
 
   @else {
     @return #fff;
+  }
+}
+
+// STUB: create mixin returns responsive font size
+@mixin resize($size-name) {
+  $result: map-get($font-sizes, $size-name);
+  font-size: $result;
+
+  @media only screen and (min-width: 2560px) {
+    $result: map-get($font-sizes, $size-name)+1; // increase font size by 1
+    font-size: $result;
   }
 }
 

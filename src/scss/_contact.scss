@@ -33,7 +33,7 @@
       textarea:focus~label,
       input:valid~label,
       textarea:valid~label {
-        font-size: size(fs-caption);
+        @include resize(fs-caption);
         color: $accent-color;
         margin-bottom: 1rem;
         top: -5px;
@@ -49,7 +49,7 @@
 
         label {
           color: $accent-color;
-          font-size: size(fs-body1);
+          @include resize(fs-body1);
           padding: 1.3rem 30px 1rem;
           position: absolute;
           top: 10px;
@@ -69,7 +69,7 @@
         border: 0;
         max-width: 100%;
         width: 100%;
-        font-size: size(fs-body1);
+        @include resize(fs-body1);
         background-color: lighten($primary-color, 10%);
         color: $secondary-color;
         border-radius: radius(regular);

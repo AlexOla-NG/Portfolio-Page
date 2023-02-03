@@ -53,6 +53,8 @@ I had some challenge with the animation & transition effects. I originally inten
 - [General sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator) - This is the documentation for the general sibling combinator. It is used to match all iterations of the second element . I really liked this pattern and will use it going forward.
 - [Link not clickable because ::Before and ::After [duplicate]](https://stackoverflow.com/a/49487195) - This helped me make anchor elements nested in pseudo-elements clickable. I really liked this pattern and will use it going forward.
 - [Sass Tutorial for Beginners - CSS With Superpowers](https://youtu.be/_a5j7KoflTs) - This tutorial introduced me to SCSS. I really liked the way the instructor broke down the concepts.
+- [Image Overlay by hosam](https://codepen.io/hdoma1/pen/xxZRqNE?editors=1100) - This codepen template helped me add overlay effects to each project onhover. I really liked the samples provided in the codepen.
+- [Using @mixin or @function to change font sizes based on screen size](https://stackoverflow.com/questions/64428683/using-mixin-or-function-to-change-font-sizes-based-on-screen-size) - This helped me understand how to use a scss mixin to set font size responsively. I really liked this pattern and will use it going forward.
 
 ## Author
 

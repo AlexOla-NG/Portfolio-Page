@@ -12,13 +12,13 @@
 
     .more-info-wrapper {
       h3 {
-        font-size: size(fs-h3);
+        @include resize(fs-h3);
         padding: 0 0 40px;
       }
 
       p {
         color: lighten($primary-color, 30%);
-        font-size: size(fs-body1);
+        @include resize(fs-body1);
         padding: 0 0 40px;
 
         a {

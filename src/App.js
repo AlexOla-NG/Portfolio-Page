@@ -6,9 +6,6 @@ import About from "./views/About";
 import Projects from "./views/Projects";
 import Contact from "./views/Contact";
 import HomeHero from "./components/hero/HomeHero";
-// import About from "./components/about/About";
-// import Projects from "./components/projects/Projects";
-// import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Error from "./views/Error";
 

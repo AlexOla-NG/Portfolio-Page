@@ -16,18 +16,17 @@
     text-align: center;
 
     h1 {
-      font-size: size(fs-h1);
+      @include resize(fs-h1);
       padding-bottom: 2.5rem;
     }
 
     p {
-      font-size: size(fs-p);
+      @include resize(fs-p);
       line-height: 1.6;
     }
   }
 
   button {
-    width: 12rem;
-    max-width: 60%;
+    max-width: 80%;
   }
 }

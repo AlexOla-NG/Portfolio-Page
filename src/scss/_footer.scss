@@ -6,12 +6,12 @@
   .article {
     h1 {
       color: $secondary-color;
-      font-size: size(fs-h5);
+      @include resize(fs-h5);
       padding-bottom: 1rem;
     }
 
     p {
-      font-size: size(fs-caption);
+      @include resize(fs-caption);
       line-height: 1.6;
     }
   }

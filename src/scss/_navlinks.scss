@@ -98,7 +98,7 @@
     &__link {
       color: darken($secondary-color, 10%);
       display: inline-block;
-      font-size: 2rem;
+      @include resize(fs-navlink);
       text-transform: uppercase;
       padding: 2rem 0;
       font-weight: weight(bold);

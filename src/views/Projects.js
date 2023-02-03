@@ -31,7 +31,7 @@ const Projects = () => {
       description:
         "Frontend UI for a data management solution platform. Built with React JS & Material UI",
       img: dmsScreenshot,
-      liveDemo: "https://data-management-solution.vercel.app/login",
+      liveDemo: "https://data-management-solution.vercel.app/",
       githubRepo: "https://github.com/AlexOla-NG/Data-Management-Solution",
       skills: ["React JS", "Material UI"],
     },
@@ -40,7 +40,7 @@ const Projects = () => {
       description:
         "A react app with login, dashboard & user details pages. Built with React TS & SCSS",
       img: lendsqrLoginScreenshot,
-      liveDemo: "https://alexander-oweka-lendsqr-fe-test.vercel.app/login",
+      liveDemo: "https://alexander-oweka-lendsqr-fe-test.vercel.app/",
       githubRepo: "https://github.com/AlexOla-NG/lendsqr-fe-test",
       skills: ["React TS", "SCSS", "API"],
     },

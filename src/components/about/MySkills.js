@@ -16,9 +16,6 @@ const MySkills = () => {
     "WordPress Development",
     "Git",
     "GitHub",
-    "Responsive Design",
-    "Troubleshooting",
-    "Research",
   ];
 
   const getSkills = () => {
@@ -27,7 +24,7 @@ const MySkills = () => {
 
   return (
     <article className="more-info-wrapper">
-      <h3>My Skills</h3>
+      <h3>My Tech stack</h3>
       <div className="skills-wrapper">{getSkills()}</div>
     </article>
   );
