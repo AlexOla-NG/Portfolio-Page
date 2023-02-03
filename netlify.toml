@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "/src/views/404.Error.js" #-change-path-here-and-delete-this-comment
+  status = 404
