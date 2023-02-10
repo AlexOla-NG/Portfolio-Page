@@ -8,6 +8,7 @@ import lendsqrLoginScreenshot from "../assests/lendsqrLoginScreenshot.png";
 import scandiwebScreenshot from "../assests/scandiwebScreenshot.png";
 import paylodeScreenshot from "../assests/paylodeAssessmentScreenshot.png";
 import dmsScreenshot from "../assests/dataManagementSolutionLoginScreenshot.png";
+import pokedexScreenshot from "../assests/pokedexScreenshot.png";
 
 const Projects = () => {
   const projectHeaderProps = {
@@ -17,6 +18,15 @@ const Projects = () => {
   };
 
   const projectContentProps = [
+    {
+      title: "Pokedex",
+      description:
+        "A frontend UI for rendering data from the pokeapi API. Built with React TS & SCSS",
+      img: pokedexScreenshot,
+      liveDemo: "https://pokedex-wheat-beta.vercel.app/",
+      githubRepo: "https://github.com/AlexOla-NG/pokedex",
+      skills: ["React TS", "SCSS", "API"],
+    },
     {
       title: "Movie App",
       description:
