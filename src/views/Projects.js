@@ -23,7 +23,7 @@ const Projects = () => {
       description:
         "A frontend UI for rendering data from the pokeapi API. Built with React TS & SCSS",
       img: pokedexScreenshot,
-      liveDemo: "https://pokedex-wheat-beta.vercel.app/",
+      liveDemo: "https://pokedex-alexola-ng.vercel.app/",
       githubRepo: "https://github.com/AlexOla-NG/pokedex",
       skills: ["React TS", "SCSS", "API"],
     },
